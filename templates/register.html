@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="../../static/css/util.css">
+    <link rel="stylesheet" href="../../static/css/blog.css">
+    <link rel="stylesheet" href="../../static/css/mobile.css">
+    <link rel="stylesheet" href="../../static/css/login.css">
+    <link rel="stylesheet" href="../../static/css/typewriter.css" />
+    <title>IIITDWD Player Manager</title>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="container">
+            <section class="wrapper">
+                <div class="heading">
+                    <h1 class="text text-large">Register</h1>
+                    <p class="text text-normal">Already have an account?<span><a href="/" class="text text-links">Login here</a></span>
+                    </p>
+                </div>
+                <form name="signin" class="form" action="{{url_for('register')}}" method="post">
+                    <div class="input-control">
+
+                        <input type="text" name="username" id="username" class="input-field" placeholder="Enter your Username">
+                    </div>
+                    <div class="input-control">
+
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email Address">
+                    </div>
+                    <div class="input-control">
+
+                        <input type="password" name="password" id="password" class="input-field" placeholder="Enter your Password">
+                    </div>
+                    <div class="input-control">
+
+                        <input type="submit" name="submit" class="input-submit" value="Register">
+                    </div>
+                </form>
+		</div>
+            </section>
+        </div>
+    </main>
+
+</html>

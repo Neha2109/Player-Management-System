@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <link rel="stylesheet" href="../../static/css/util.css" />
+    <link rel="stylesheet" href="../../static/css/mobile.css" />
+    <link rel="stylesheet" href="../../static/css/typewriter.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>IIITDWD Player Manager</title>
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+      }
+
+      .profile-container {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 6px;
+          background-color: #002242;
+          color: white;
+      }
+
+      .profile-icon {
+          font-size: 2.5em;
+          margin-right: 10px;
+      }
+      .logout-button {
+            background-color: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            backdrop-filter: blur(10px);
+            margin-left: auto;
+            margin-right: 20px;
+            padding-right: 30px;
+          padding-left: 30px;
+        }
+
+        .logout-button:hover {
+            background-color: rgba(255, 255, 255, 0.3); /* Glassmorphism effect on hover */
+        }
+  </style>
+    
+  </head>
+
+  <body>
+    <div class="profile-container">
+      <div class="profile-icon"><i class="fas fa-user-circle"></i></div>
+      <div class="profile-text"> {{ user }}</div>
+      <a href="/" class="logout-button">Logout</a>
+  </div>
+    <nav class="max-width-1 navigation">
+      <div class="nav-left">
+        <ul>
+          <li><a href="/">Home </a></li>
+          <li><a href="/search">Search</a></li>
+          <li><a href="/update">Update</a></li>
+          <li><a href="/insert">Insert</a></li>
+          <li><a href="/delete">Delete</a></li>
+          <li><a href="/display">Database</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    
+   
+    
+    
+    <div class="max-width-1">
+      <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div id="container">
+          <span id="text1"></span>
+          <span id="text2"></span>
+        </div>
+
+        <svg id="filters">
+          <defs>
+            <filter id="threshold">
+              <feColorMatrix
+                in="SourceGraphic"
+                type="matrix"
+                values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 255 -140"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div>
+      <footer class="footer m-auto flex-all-center">
+        <p>Copyright &copy; IIITDWD</p>
+      </footer>
+    </div>
+
+    <script src="../../static/js/logic_heading.js"></script>
+  </body>
+</html>

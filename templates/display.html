@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <link rel="stylesheet" href="../../static/css/util.css" />
+    <link rel="stylesheet" href="../../static/css/mobile.css" />
+    <link rel="stylesheet" href="../../static/css/typewriter.css" />
+    <title>IIITDWD Player Manager</title>
+      <style>
+table, th, td {
+padding:7px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-bottom:25px;
+}
+br{
+display:none
+}
+</style>
+  </head>
+
+  <body>
+    <nav class="max-width-1 navigation">
+      <div class="nav-left">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/search">Search</a></li>
+          <li><a href="/update">Update</a></li>
+          <li><a href="/insert">Insert</a></li>
+          <li><a href="/delete">Delete</a></li>
+          <li><a href="/display">Database</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="max-width-1">
+      <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+    <div class="search-set wrapper1 flexit">
+      <h1>Displaying all the tables</h1>
+      <table border=3>
+{% for item in data %}
+<tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+
+                </br>
+            </tr>
+
+        {% endfor %}
+    </table>
+<table border=3>
+{% for item in data1 %}
+
+<tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+
+                </br>
+            </tr>
+
+        {% endfor %}
+    </table>
+<table border=3>
+{% for item in data2 %}
+
+<tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+
+                </br>
+            </tr>
+
+        {% endfor %}
+    </table>
+<table border=3>
+{% for item in data3 %}
+
+<tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+
+                </br>
+            </tr>
+
+        {% endfor %}
+    </table>
+<table border=3>
+{% for item in data4 %}
+
+<tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+
+                </br>
+            </tr>
+
+        {% endfor %}
+    </table>
+    </div>
+<!--    <footer class="footer m-auto flex-all-center">-->
+<!--      <p>Copyright &copy; 3Amigos</p>-->
+<!--    </footer>-->
+
+    <script src="js/logic.js"></script>
+    <script src="js/logic_heading.js"></script>
+  </body>
+</html>

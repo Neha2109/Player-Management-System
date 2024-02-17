@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <link rel="stylesheet" href="../../static/css/util.css" />
+    <link rel="stylesheet" href="../../static/css/mobile.css" />
+    <link rel="stylesheet" href="../../static/css/typewriter.css" />
+    <title>IIITDWD Player Manager</title>
+      <style>
+table, th, td {
+padding:7px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-bottom:25px;
+}
+br{
+display:none
+}
+</style>
+  </head>
+
+  <body>
+    <nav class="max-width-1 navigation">
+      <div class="nav-left">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/search">Search</a></li>
+          <li><a href="/update">Update</a></li>
+          <li><a href="/insert">Insert</a></li>
+          <li><a href="/delete">Delete</a></li>
+          <li><a href="/display">Database</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="max-width-1">
+      <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+
+
+
+      </div>
+    </div>
+    <div class="search-set wrapper1">
+
+        <h1>Search a Record</h1>
+        <form class="example" method="post" action="/search">
+            <input type="text" placeholder="Search by player_id or name" class="search-input" name="player_id">
+            <button type="submit" class="search-input-btn btn">Search
+            </button>
+        </form>
+        <p></p>
+
+        <table border=5>
+        {% for item in data %}
+            <tr>
+                <div >
+                <td >{{item[0]}}</td>
+                <td >{{item[1]}}</td>
+                    </div>
+<!--                <td>{{item[2]}}</td>-->
+<!--                <td>{{item[3]}}</td>-->
+<!--                <td>{{item[4]}}</td>-->
+<!--                <td>{{item[5]}}</td>-->
+                </br>
+            </tr>
+        {% endfor %}
+        </table>
+<!--        {% for item in data %}-->
+<!--<li><span class="my-handle"></span><input type="hidden" name="data[]" value="{{ item }}"/>{{ item }}</li>-->
+<!--{% endfor %}-->
+
+
+    </div>
+<!--    <footer class="footer m-auto flex-all-center">-->
+<!--        <p>Copyright &copy; 3Amigos</p>-->
+<!--      </footer>-->
+
+    <script src="js/logic.js"></script>
+    <script src="js/logic_heading.js"></script>
+  </body>
+</html>

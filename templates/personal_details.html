@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <link rel="stylesheet" href="../../static/css/util.css" />
+    <link rel="stylesheet" href="../../static/css/mobile.css" />
+    <link rel="stylesheet" href="../../static/css/typewriter.css" />
+    <title>IIITDWD Player Manager</title>
+  </head>
+
+  <body>
+    <nav class="max-width-1 navigation">
+      <div class="nav-left">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/search">Search</a></li>
+          <li><a href="/update">Update</a></li>
+          <li><a href="/insert">Insert</a></li>
+          <li><a href="/delete">Delete</a></li>
+          <li><a href="/display">Database</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="max-width-1">
+      <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+    <div class="search-set wrapper1">
+      <h1>Enter Personal Details</h1>
+      <form method="POST" action="/personal_details" class="flexit">
+        <!-- <div class="form-box"> -->
+        <input
+          type="number"
+          name="player_id"
+          placeholder="Enter the player ID"
+          class="search-input"
+        />
+        <!-- </div> -->
+
+        <!-- <div class="form-box"> -->
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter Player Name"
+          class="search-input"
+        />
+        <!-- </div> -->
+        <!-- <div class="form-box"> -->
+        <input
+          type="number"
+          name="age"
+          placeholder="Enter Player Age"
+          class="search-input"
+        />
+        <!-- </div> -->
+        <!-- <div class="form-box"> -->
+        <input
+          type="text"
+          name="major"
+          placeholder="Enter Player Major"
+          class="search-input"
+        />
+        <input
+          type="text"
+          name="sport"
+          placeholder="Enter Player Sport"
+          class="search-input"
+        />
+        <!-- </div> -->
+        <!-- <div class="form-box"> -->
+        <input type="submit" class="search-input-btn btn" />
+        <!-- </div> -->
+      </form>
+      <p></p>
+    </div>
+    <footer class="footer m-auto flex-all-center">
+      <p>Copyright &copy; IIIT</p>
+    </footer>
+
+    <script src="js/logic.js"></script>
+    <script src="js/logic_heading.js"></script>
+  </body>
+</html>

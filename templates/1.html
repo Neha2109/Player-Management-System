@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../static/css/style.css" />
+    <link rel="stylesheet" href="../../static/css/util.css" />
+    <link rel="stylesheet" href="../../static/css/mobile.css" />
+    <link rel="stylesheet" href="../../static/css/typewriter.css" />
+    <title>IIITDWD Player Manager</title>
+  </head>
+
+  <body>
+    <nav class="max-width-1 navigation">
+      <div class="nav-left">
+        <ul>
+          <!-- <li style="color:blue;">{</li> -->
+            <!-- <li style="color: blue;">TestUsername</li> -->
+          <li><a href="/">Home{{user}}</a></li>
+          <li><a href="/search">Search</a></li>
+          <li><a href="/update">Update</a></li>
+          <li><a href="/insert">Insert</a></li>
+          <li><a href="/delete">Delete</a></li>
+          <li><a href="/display">Database</a></li>
+          <!-- <li><a href="/register">Signin</a></li> -->
+
+        </ul>
+      </div>
+    </nav>
+    <div class="max-width-1">
+      <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div id="container">
+          <span id="text1"></span>
+          <span id="text2"></span>
+        </div>
+
+        <svg id="filters">
+          <defs>
+            <filter id="threshold">
+              <feColorMatrix
+                in="SourceGraphic"
+                type="matrix"
+                values="1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 255 -140"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div>
+      <footer class="footer m-auto flex-all-center">
+        <p>Copyright &copy; IIIT </p>
+      </footer>
+    </div>
+
+    <script src="../../static/js/logic_heading.js"></script>
+  </body>
+</html>
